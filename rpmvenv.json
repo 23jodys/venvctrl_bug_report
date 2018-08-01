@@ -1,0 +1,40 @@
+{
+    "extensions": {
+        "enabled": [
+            "python_venv",
+            "blocks",
+	    "file_extras",
+	    "file_permissions"
+        ]
+    },
+    "core": {
+        "name": "Whatever",
+        "summary": "whatever",
+        "version": "1.0.9",
+	"release": "1",
+	"license": "None",
+        "requires": [
+            "python34 >= 3.4.0"
+        ]
+    },
+    "python_venv": {
+        "name": "faker",
+        "path": "/usr/share/venv/",
+        "python": "python3",
+        "pip_flags": "--no-binary :all:",
+        "requirements": ["requirements.txt"],
+	"flags": [],
+	"strip_binaries": false
+    },
+    "blocks": {
+        "desc": [
+            "Example for bug report"
+        ]
+    },
+    "file_permissions": {
+        "user": "root",
+        "group": "root",
+        "create_user": false,
+        "create_group": false
+    }
+}
